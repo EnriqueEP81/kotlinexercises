@@ -17,4 +17,9 @@ fun main() {
 
     val person = Person("Enrique","Estevez",21)
     println(person)
+
+    val dogs = listOf(Dog("nela",13),
+        Dog("Luna", 11))
+    val oldest = dogs.maxBy { it.age ?: 0 }
+    println("The oldest is: $oldest")
 }
