@@ -2,7 +2,28 @@ package org.example.ch2.sec4
 
 fun main() {
     //forLoops()
-    loopCollection()
+    //loopCollection()
+    //loopMaps()
+    listWithIndex()
+}
+
+fun listWithIndex() {
+    var list = listOf("uno", "dos", "tres")
+    for((index, ele) in list.withIndex()){
+        println("$index : $ele")
+    }
+}
+
+fun loopMaps() {
+    var binaryReps = mutableMapOf<Char,String>()
+    for (char in 'A'..'F') {
+        val binary = char.code.toString(radix=2) //named arguments
+        binaryReps[char] = binary
+    }
+
+    for ((letter,binary) in binaryReps){
+        println("$letter = $binary")
+    }
 }
 
 fun loopCollection(){
