@@ -1,6 +1,6 @@
 package org.example.ch1
-
-fun main(){
+//no imports: kotlin standard library: https://kotlinlang.org/api/core/kotlin-stdlib/ default imports
+fun main(args: Array<String>){
     val maxNumber = max2(5,3)
     println("Hola $maxNumber")
     println("El valor es ${if(maxNumber>2) "mayor que 2 " else "pequenio"}")
