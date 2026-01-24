@@ -1,4 +1,4 @@
-package org.example.ch2.sec4
+package org.example.udemy.sec4
 
 fun main() {
     val miArray = arrayOf("uno","dos","tres")
